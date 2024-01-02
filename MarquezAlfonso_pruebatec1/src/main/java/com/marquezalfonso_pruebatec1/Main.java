@@ -26,14 +26,13 @@ public class Main {
             switch (opc) {
                 case 1: control.crearEmpleado();
                     break;
-                case 2: 
+                case 2: control.eliminarEmpleado();
                     break;
-                case 3:
+                case 3: control.modificarEmpleado();
                     break;
                 case 4: control.listarEmpleados();
                     break;
-                case 5:
-
+                case 5: control.listarEmpleadosCargo();
                     break;
                 case 6:
                     System.out.println("Cerrando ...");
