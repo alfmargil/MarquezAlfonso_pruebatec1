@@ -2,7 +2,6 @@ package com.marquezalfonso_pruebatec1.modelos;
 
 import com.marquezalfonso_pruebatec1.persistencia.ControladoraPersistencia;
 import com.marquezalfonso_pruebatec1.persistencia.exceptions.NonexistentEntityException;
-import com.sun.source.tree.InstanceOfTree;
 import java.time.LocalDate;
 import java.util.List;
 import java.util.Scanner;
@@ -16,6 +15,8 @@ import java.util.logging.Logger;
 public class Controladora {
 
     ControladoraPersistencia controlPersis = new ControladoraPersistencia();
+    
+    // Metodo para crear empleado
 
     public void crearEmpleado() {
 
@@ -76,6 +77,8 @@ public class Controladora {
         controlPersis.crearEmpleado(new Empleado(empNombre, empApellido, empCargo, empSalario, LocalDate.of(año, mes, dia)));
 
     }
+    
+    // Metodo para listar todos los empleados
 
     public void listarEmpleados() {
 
@@ -94,6 +97,8 @@ public class Controladora {
         }
 
     }
+    
+    // Metodo para listar todos los empleados con un cargo
 
     public void listarEmpleadosCargo() {
 
@@ -120,6 +125,7 @@ public class Controladora {
 
     }
 
+    // Metodo para eliminar empleado, pide los datos y los pasa a la controladora de persistencia
     public void eliminarEmpleado() {
 
         System.out.println("***************************************");
@@ -141,6 +147,7 @@ public class Controladora {
 
     }
 
+    // Metodo para modificar empleado, pide los datos y los pasa a la controladora de persistencia
     public void modificarEmpleado() {
 
         System.out.println("***************************************");

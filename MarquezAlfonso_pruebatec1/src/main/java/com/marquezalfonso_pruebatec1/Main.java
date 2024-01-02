@@ -46,6 +46,8 @@ public class Main {
        sc.close();
     }
 
+    
+    // Dibuja el menu principal
     public static void dibujarMenu() {
         System.out.println("***************************************");
         System.out.println("*        GESTION DE EMPLEADOS         *");

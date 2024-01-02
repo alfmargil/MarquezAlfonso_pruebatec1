@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.marquezalfonso_pruebatec1.modelos;
 
 import java.io.Serializable;
@@ -34,14 +30,6 @@ public class Empleado implements Serializable {
     public Empleado() {
     }
     
-    /**
-     * 
-     * @param nombre
-     * @param apellido
-     * @param cargo
-     * @param salario
-     * @param fechaInicio 
-     */
 
     public Empleado(String nombre, String apellido, String cargo, double salario, LocalDate fechaInicio) {
         this.nombre = nombre;

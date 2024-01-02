@@ -5,7 +5,8 @@ import com.marquezalfonso_pruebatec1.persistencia.exceptions.NonexistentEntityEx
 import java.util.List;
 
 /**
- *
+ * Esta clase se encarga de conectar la Controladora con el JPA controller
+ * 
  * @author Alfonso
  */
 public class ControladoraPersistencia {
@@ -19,7 +20,7 @@ public class ControladoraPersistencia {
 
     }
 
-    // Lista todos los empleados
+    // Devuelve una lista con los empleados
     public List<Empleado> listarEmpleados() {
         return empJpa.findEmpleadoEntities();
 
@@ -38,11 +39,13 @@ public class ControladoraPersistencia {
         empJpa.destroy(id);
     }
     
+    // Devuelve el empleado con la id proporcionada
     public Empleado buscarEmpleado(int id)
     {
        return empJpa.findEmpleado(id);
     }
     
+    // Modifica el empleado pasado por parámetro
     public void modificarEmpleado(Empleado emp) throws Exception
     {
         empJpa.edit(emp);

@@ -18,7 +18,7 @@ import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 
 /**
- *
+ * Clase autogenerada para las conexiones JPA
  * @author Alfonso
  */
 public class EmpleadoJpaController implements Serializable {

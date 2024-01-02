@@ -22,14 +22,14 @@ La aplicación permite a los usuarios realizar operaciones CRUD sobre la base de
 ## Estructura del Proyecto
 
 - **src/main/java/com/marquezAlfonso_pruebatec1/** Contiene la clase Main y el resto de paquetes
-- **src/main/java/com/marquezAlfonso_pruebatec1/modelos**: Contiene la lógica de negocio de la aplicación
-- **src/main/java/com/marquezAlfonso_pruebatec1/persistencia**: Contiene la lógica de persistencia la aplicación
+- **src/main/java/com/marquezAlfonso_pruebatec1/modelos** Contiene la lógica de negocio de la aplicación
+- **src/main/java/com/marquezAlfonso_pruebatec1/persistencia** Contiene la lógica de persistencia la aplicación
 
 ## Configuración
 
 1. **Requisitos previos**: Asegúrate de tener instalado Java 17
 
-2. **Configuración de la base de datos**: 
+2. **Configuración de la base de datos**: Importar el archivo sql del repositorio con la base de datos inicial. Contiene 4 elementos
 
 3. **Ejecución del proyecto**: Abrir el proyecto en NetBeans, importar la base de datos y ejecutar.
 
