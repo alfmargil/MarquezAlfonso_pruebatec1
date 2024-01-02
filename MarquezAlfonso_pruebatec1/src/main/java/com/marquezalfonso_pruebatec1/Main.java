@@ -39,9 +39,6 @@ public class Main {
                     break;
                 default:
                     System.out.println("Opción no valida, por favor ingrese una opcion valida\n\n");
-                    
-                    
-            
             
             }
 

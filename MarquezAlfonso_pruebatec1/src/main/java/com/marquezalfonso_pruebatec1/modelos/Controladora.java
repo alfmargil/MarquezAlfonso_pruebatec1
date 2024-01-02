@@ -142,7 +142,7 @@ public class Controladora {
 
     }
 
-    public void modificarEmpleado() throws Exception {
+    public void modificarEmpleado(){
 
         System.out.println("***************************************");
         System.out.println("*        GESTION DE EMPLEADOS         *");
@@ -212,7 +212,11 @@ public class Controladora {
             empModificar.setCargo(empCargo);
             empModificar.setSalario(empSalario);
             empModificar.setFechaInicio(LocalDate.of(año, mes, dia));
-            controlPersis.modificarEmpleado(empModificar);
+            try {
+                controlPersis.modificarEmpleado(empModificar);
+            } catch (Exception ex) {
+                Logger.getLogger(Controladora.class.getName()).log(Level.SEVERE, null, ex);
+            }
 
         }
 
