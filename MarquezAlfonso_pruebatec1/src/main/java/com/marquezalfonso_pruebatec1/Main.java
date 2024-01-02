@@ -43,6 +43,7 @@ public class Main {
             }
 
         }
+       sc.close();
     }
 
     public static void dibujarMenu() {

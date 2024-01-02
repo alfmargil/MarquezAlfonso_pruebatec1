@@ -73,8 +73,8 @@ public class Controladora {
             dia = sc.nextInt();
         }
 
-        controlPersis.crearEmpleado(new Empleado(empNombre, empNombre, empNombre, empSalario, LocalDate.of(año, mes, dia)));
-        sc.close();
+        controlPersis.crearEmpleado(new Empleado(empNombre, empApellido, empCargo, empSalario, LocalDate.of(año, mes, dia)));
+
     }
 
     public void listarEmpleados() {
@@ -118,7 +118,6 @@ public class Controladora {
             System.out.println("---------------------------------------");
         }
 
-        sc.close();
     }
 
     public void eliminarEmpleado() {
@@ -142,7 +141,7 @@ public class Controladora {
 
     }
 
-    public void modificarEmpleado(){
+    public void modificarEmpleado() {
 
         System.out.println("***************************************");
         System.out.println("*        GESTION DE EMPLEADOS         *");
@@ -205,7 +204,7 @@ public class Controladora {
                 System.out.println("Por favor, introduzca un dia valido");
                 dia = sc.nextInt();
             }
-            
+
             Empleado empModificar = controlPersis.buscarEmpleado(id);
             empModificar.setNombre(empNombre);
             empModificar.setApellido(empApellido);
