@@ -13,6 +13,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Query;
 import javax.persistence.EntityNotFoundException;
 import javax.persistence.Persistence;
+import javax.persistence.TypedQuery;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 
@@ -30,9 +31,8 @@ public class EmpleadoJpaController implements Serializable {
     public EntityManager getEntityManager() {
         return emf.createEntityManager();
     }
-    
-    public EmpleadoJpaController()
-    {
+
+    public EmpleadoJpaController() {
         emf = Persistence.createEntityManagerFactory("empleadosPU");
     }
 
@@ -139,5 +139,17 @@ public class EmpleadoJpaController implements Serializable {
             em.close();
         }
     }
-    
+
+    public List<Empleado> findEmpleadosCargo(String cargo) {
+        EntityManager em = getEntityManager();
+        try {
+            TypedQuery<Empleado> query = em.createQuery("SELECT e FROM Empleado e WHERE e.cargo = :cargo", Empleado.class);
+            query.setParameter("cargo", cargo);
+            return query.getResultList();
+        } finally {
+            em.close();
+        }
+    }
 }
+
+
