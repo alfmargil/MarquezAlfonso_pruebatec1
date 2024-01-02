@@ -27,11 +27,11 @@ La aplicación permite a los usuarios realizar operaciones CRUD sobre la base de
 
 ## Configuración
 
-1. **Requisitos previos**: Asegúrate de tener instalado [Java](link-a-la-instalacion-de-java) y [otras dependencias si las hay].
+1. **Requisitos previos**: Asegúrate de tener instalado Java 17
 
-2. **Configuración de la base de datos**: [Instrucciones para configurar la base de datos si es necesario.]
+2. **Configuración de la base de datos**: 
 
-3. **Ejecución del proyecto**: [Pasos para ejecutar el proyecto y probar la funcionalidad.]
+3. **Ejecución del proyecto**: Abrir el proyecto en NetBeans, importar la base de datos y ejecutar.
 
 ## Casos supuestos
 
