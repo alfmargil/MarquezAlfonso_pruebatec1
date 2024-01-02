@@ -1,0 +1,9 @@
+com\marquezalfonso_pruebatec1\Main.class
+com\marquezalfonso_pruebatec1\persistencia\ControladoraPersistencia.class
+com\marquezalfonso_pruebatec1\persistencia\exceptions\IllegalOrphanException.class
+com\marquezalfonso_pruebatec1\persistencia\EmpleadoJpaController.class
+com\marquezalfonso_pruebatec1\persistencia\exceptions\NonexistentEntityException.class
+com\marquezalfonso_pruebatec1\persistencia\exceptions\PreexistingEntityException.class
+com\marquezalfonso_pruebatec1\modelos\Empleado.class
+com\marquezalfonso_pruebatec1\modelos\Controladora.class
+com\marquezalfonso_pruebatec1\modelos\Empleado_.class
