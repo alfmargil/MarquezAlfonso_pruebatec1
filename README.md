@@ -23,7 +23,7 @@ La aplicación permite a los usuarios realizar operaciones CRUD sobre la base de
 
 - **src/main/java/com/marquezAlfonso_pruebatec1/** Contiene la clase Main y el resto de paquetes
 - **src/main/java/com/marquezAlfonso_pruebatec1/modelos** Contiene la lógica de negocio de la aplicación
-- **src/main/java/com/marquezAlfonso_pruebatec1/persistencia** Contiene la lógica de persistencia la aplicación
+- **src/main/java/com/marquezAlfonso_pruebatec1/persistencia** Contiene la lógica de persistencia de la aplicación
 
 ## Configuración
 
